@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theem="light">
+<html lang="pt-br">
 
-<head>a
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> TipiTwo </title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <script>
         const changeThemeToDark = () => {
             document.documentElement.setAttribute("data-theme", "dark");
@@ -20,7 +20,8 @@
         }
         let theme = localStorage.getItem('data-theme');
         if (theme == 'dark') changeThemeToDark();
-    </script>
+      </script>
+
 </head>
 
 <body>
@@ -38,12 +39,9 @@
                         <li><a href=""> CONTATO &gt; </a></li>
                     </ul>
                 </div>
-                <div>
-                    <input type="checkbox" name="toggle-dark" id="toggle-dark">
-                </div>
-
                 <div class="bnt">
-                    <button class="md">Modo Claro</button>
+                    
+                    <button class="md"> <input type="checkbox" name="toggle-dark" id="toggle-dark"> Modo Claro</button>
                     <button class="me">Modo Escuro</button>
                 </div>
             </nav>
@@ -66,10 +64,8 @@
             </div>
         </section>
     </header>
-    
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <script src="https://kit.fontawesome.com/bedd2811b0.js" crossorigin="anonymous"></script>
 </body>
