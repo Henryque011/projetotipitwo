@@ -1,68 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Candal&family=Carattere&display=swap');
+
 /* font-family: "Carattere", cursive; */
 /* font-family: "Black Han Sans", sans-serif; */
 /* font-family: "Candal", sans-serif; */
-*{
+* {
     padding: 0;
-    margin: 0;   
+    margin: 0;
 }
+html{
+    --background-body: Black ;
+    /* color */
+}
+html [data-theme="dark"]{
+    --background-body: white;
+    /* color */
+}
+body {
+    background: var(--background-body);
+}
+
+
 header {
     width: 100%;
 }
+
 .site {
     width: 100%;
     min-width: 1200px;
     height: 600px;
     width: 100%;
-    background: lightgrey;
     background-image: url(../img/Banner.png);
 }
+
 /* nav */
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
 }
 
-.logo img{
+.logo img {
     margin: 20px;
     width: 400px;
+    cursor: pointer;
 }
+
 .links {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     cursor: pointer;
-    
 }
 
-
-.itens{ 
+.itens {
     display: flex;
     padding-left: 20px;
 }
-.itens li a{
+
+.itens li a {
     padding: 20px;
     font-size: 20px;
     font-family: "Candal", sans-serif;
     text-decoration: none;
     color: white;
 }
+
 .itens li a:hover {
-    background-color: aqua;
     transition: 1s;
-    transform: perspective(10px);
-    
-    box-shadow: red ;
+    user-select: contain;
+    border-radius: 20px 50px 20px 50px;
+    color: aqua;
+    box-shadow: aqua 5px 5px 5px 5px;
+    cursor: pointer;
 }
-.bnt, .md .me {
+
+
+.bnt,
+.md .me {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-.md, .me  {
-    width:200px;
+
+.md,
+.me {
+    width: 200px;
     height: 50px;
     border-radius: 20px;
     font-size: 12pt;
@@ -70,13 +93,17 @@ nav{
     background-color: azure;
     cursor: pointer;
     align-items: center;
+    background-image: url(../img/Ativo\ 2.svg);
 }
-.md:hover, .me:hover {
+
+.md:hover,
+.me:hover {
     background-color: aqua;
     transition: 1s;
 }
+
 /* titúlos banner */
-.txtbanner{
+.txtbanner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,29 +115,40 @@ nav{
     font-family: "Black Han Sans", sans-serif;
     font-size: xx-large;
     color: #DBC7B3;
-    
+
 }
+
+.animate__slideInLeft {
+    transition-duration: 3s;
+}
+
+.animate__zoomIn {
+    transition: 3s;
+}
+
 .pos {
     display: flex;
     justify-content: space-between;
 }
-.dif{
+
+.dif {
     display: flex;
     justify-content: start;
     color: aqua;
-    font-family: "Carattere", cursive; 
+    font-family: "Carattere", cursive;
     font-size: 32pt;
-    
+
 }
+
 .posit {
     display: flex;
     justify-content: space-between;
 }
+
 .pos2 {
     display: flex;
     justify-content: end;
     align-items: center;
     text-align: center;
     font-weight: bolder;
-    
 }
