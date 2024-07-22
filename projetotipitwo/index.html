@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +12,14 @@
             document.documentElement.setAttribute("data-theme", "dark");
             localStorage.setItem("data-theme", "dark");
         }
-    
         const changeThemeToLight = () => {
             document.documentElement.setAttribute("data-theme", "light");
             localStorage.setItem("data-theme", 'light');
         }
         let theme = localStorage.getItem('data-theme');
         if (theme == 'dark') changeThemeToDark();
-      </script>
-
+    </script>
 </head>
-
 <body>
     <header>
         <section class="site">
@@ -40,9 +36,10 @@
                     </ul>
                 </div>
                 <div class="bnt">
-                    
-                    <button class="md"> <input type="checkbox" name="toggle-dark" id="toggle-dark"> Modo Claro</button>
-                    <button class="me">Modo Escuro</button>
+                    <div class="checkbox">
+                        <button class="md"> <input type="checkbox" name="toggle-dark" id="toggle-dark" namr="chk1"
+                                value="SERVIÇOS"> Trocar tema</button>
+                    </div>
                 </div>
             </nav>
             <div class="txtbanner">
@@ -50,13 +47,13 @@
                     <h2>DESENVOLVIMENTO</h2>
                     <div class="pos">
                         <h2>WEB</h2>
-                        <h3 class="dif">Acessível</h3>
+                        <h3 class="dif">ACESSÍVEL</h3>
                     </div>
                 </div>
                 <div class="animate__animated animate__zoomIn">
                     <h2>TRANSFORMANDO</h2>
                     <div class="posit">
-                        <h3 class="dif"> Sonhos</h3>
+                        <h3 class="dif"> SONHOS</h3>
                         <h2 class="pos2">EM</h2>
                     </div>
                     <h2 class="pos2">CÓDIGOS</h2>
@@ -64,7 +61,19 @@
             </div>
         </section>
     </header>
+    <main>
+        <article>
+            <nav>
+                <div class="acessibilidade">
+                    <div>
+                        <button i class="fa-solid fa-eye-low-vision"></i></button>
+                    </div>
+                    <button <i class="fa-solid fa-hands"></i> </button>
 
+                </div>
+            </nav>
+        </article>
+    </main>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <script src="https://kit.fontawesome.com/bedd2811b0.js" crossorigin="anonymous"></script>
