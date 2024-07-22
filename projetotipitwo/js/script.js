@@ -3,7 +3,7 @@ const botaoDark = document.getElementById('toggle-dark');
 
 // Verifica se tem no localStorage seleção do dark theme
 if (localStorage.getItem('data-theme') == 'dark') {
-  botaoDark.checked = true;
+    botaoDark.checked = true;
 }
 
 // Liga a função ao checkbox
