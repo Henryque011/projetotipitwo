@@ -25,14 +25,14 @@ header {
     background-image: url(../img/Banner.png);
 }
 /* nav */
-nav {
+.site > nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 /* logo */
 .logo img {
     margin: 20px;
-    width: 400px;
+    width: 300px;
     cursor: pointer;
 }
 /* links-home-sobre... */
@@ -94,9 +94,13 @@ nav {
     --acessibilidade-background: white;
     --acessibilidade-color: #1D70B8;
     --introsobre-color: white;
-    --caixa-bg: -webkit-linear-gradient(right, #014462, transparent );
+    --caixa-bg: -webkit-linear-gradient(right, #15658a, transparent );
     --caixatxt-color: white;
     --borda-texto: black;
+    --boxshadow-caixa: #E4F2FC;
+    --perguntas-bg: #010F10;
+    --res-color: white;
+    
 }
 :root[data-theme="dark"] {
     --background-body:#E4F2FC;    
@@ -105,6 +109,9 @@ nav {
     --caixa-bg: -webkit-linear-gradient(right, #026592, transparent );
     --caixatxt-color: black;
     --borda-texto: none;
+    --boxshadow-caixa: #0A2945;
+    --perguntas-bg: #AABBCC;
+    --res-color: black;
 }
 input[type=checkbox] {
     margin: 0;
@@ -155,17 +162,24 @@ input[type=checkbox] {
 }
 /* main */
 
-nav > .acessibilidade {
+.centro > nav {
     display: flex;
+    justify-content: end;
+    
+}
+element.style{
+    display: flex;
+    flex-direction: column;
+}
+.acessibilidade{
+    display: flex;
+    flex-direction: column;
+}
+.conteudo .acessibilidade {
     text-align: center;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: grey;
 }
 .acessibilidade button{
-    display: flex;
-    justify-content:center;
     align-items: center;
     width: 50px;
     height: 50px;
@@ -181,7 +195,7 @@ nav > .acessibilidade {
     background: var(--acessibilidade-background);
     border-radius: 50%;
     font-size:24pt;
-    display: flex;
+    
 }
 .fa-hands:before, .fa-sign-language:before, .fa-signing:before{
     color: var(--acessibilidade-color);
@@ -200,6 +214,7 @@ nav > .acessibilidade {
 .conteudo{
     display: flex;
     justify-content: center;
+
 }
 .caixa{
     display: flex;
@@ -209,6 +224,7 @@ nav > .acessibilidade {
     width: 995px;
     margin: 20px;
     border-radius: 5%;
+    box-shadow: var(--boxshadow-caixa) 15px 15px 5px;
 }
 .caixa > .imgilustrativa{
     display: flex;
@@ -251,6 +267,9 @@ nav > .acessibilidade {
     display: flex;
     justify-content: end;
     text-decoration: none;
+    align-items: center;
+    text-align: center;
+    height: 210px;
 }
 .direcionamento button a{
     text-decoration: none;
@@ -270,10 +289,145 @@ nav > .acessibilidade {
 .direcionamento button:hover {
     transition: 0.5s;
     color: white;
-    background: rgba(0, 0, 0, 0.26);
+    background: rgb(151, 175, 206);
 }
 .direcionamento button a:hover {
     transition: 0,5;
     color: white;
+}
+.int {
+    display: flex;
+    justify-content: end;
+    margin: 20px;
+}
+.int button{
+    margin: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-color: var(--acessibilidade-border);
+    background: var(--acessibilidade-background);
+    cursor: pointer;
+    color: var(--acessibilidade-color);
 
+}
+.fa-circle-up {
+    font-size: xx-large;
+}
+/* faq perguntas */
+.perguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
+    
+    
+    background-color: var(--perguntas-bg);
+    height: 100%;
+    width: 100%;
+}
+.faq {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 740px;
+    border-radius: 50px;
+    height: 115px;
+    background-color: lightgray;
+
+    
+}
+.faq  h2 {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: "Candal", sans-serif;
+}
+.res {
+    width: 1200px;
+    height: 150px;
+    
+}
+.res h2 {
+    font-family: "Candal", sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 50px;
+    word-spacing: 2px;
+    text-indent: 5px;
+    color: var(--res-color);
+    text-align: center;
+    align-items: center;
+}
+/* footer */
+footer{
+    background: #000;
+}
+hr { 
+    color: white;
+    margin: 0px;
+    
+}
+.rodape {
+    display: flex;
+    height: 300px;
+    justify-content: space-evenly;
+    background: #000000;
+}
+.logorodap {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 270px;
+}
+.logorodap img {
+    margin: 10px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
+.linksrodap {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+.linksrodap li{
+    padding: 15px;
+}
+.linksrodap li a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    font-family: "Inter", sans-serif;
+    margin: 5px;
+    color: white; 
+}
+
+.fa-whatsapp {
+    font-size: xx-large;
+}
+.fa-linkedin {
+    font-size: xx-large;
+}
+.fa-instagram{
+    font-size: xx-large;
+}
+.fa-envelope{
+    font-size: xx-large;
+}
+.fim{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    color: white;
+    font-family: "Inter", sans-serif;
+   
 }
