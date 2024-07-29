@@ -126,6 +126,8 @@ header {
     --carrosel-color: white;
     --slick-color: #E4F2FC;
     --slickbt-color:  var(--boxshadow-caixa);
+    --cxservico-bg: -webkit-linear-gradient(left, black, transparent);
+    --cxservico-bxs: black 20px 20px 20px 20px;
 }
 
 :root[data-theme="dark"] {
@@ -146,6 +148,7 @@ header {
     --carrosel-color: black;
     --slick-color: #0A2945;
     --slickbt-color:  #026592;
+    --cxservico-bg: -webkit-linear-gradient(left, black, transparent);
 }
 
 input[type=checkbox] {
@@ -163,7 +166,7 @@ input[type=checkbox] {
 /* titúlos banner */
 .txtbanner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     margin: 20px;
@@ -521,7 +524,7 @@ hr {
     color: white;
     font-family: "Inter", sans-serif;
 }
-
+/*  site 2 - sobrbe nós */
 .topo {
     display: flex;
     justify-content: space-evenly;
@@ -594,6 +597,7 @@ hr {
 }
 /* carrosel */
 .carrosel {
+    display: flex;
     justify-content: center;
     width: 100%;
     max-width: 1200px;
@@ -602,7 +606,8 @@ hr {
     align-items: center;
     text-align: center;
 }
-.cx{
+.carrosel .cx{
+    width: 50%;
     border-radius: 20px;
 }
 .cx img {
@@ -631,12 +636,12 @@ hr {
     align-items: center;
 }
 .carrosel .slick-prev {
-    left: -100px;
+    left: -150px;
     z-index: 999; /* indexação de objeto */
     font-size: 35pt;
 }
 .carrosel .slick-next{
-    right: 100px;
+    right: -50px;
     z-index: 999;
 }
 .carrosel .slick-prev:before,
@@ -650,17 +655,97 @@ hr {
     height: 1px;
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 
 .carrosel .slick-dots li button:before{
     font-size: 12pt;
     color:  var(--slickbt-color);
 }
+/* tela 3 serviços */
+.site3 > nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.site3 {
+    width: 100%;
+    background-image: url(../img/banner2.jpg);
+    height: 600px;
 
-element.style {
+}
+.pos3{
+    display: flex;
+    justify-content: end;
+    font-size: 32pt;
+}
+.dif2{
+    color: rgb(9, 206, 206);
+    font-size: 16pt;
+    font-weight: bolder;
+}
+.pos4{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0 auto;
+    font-size: 16pt;
+}
+.pos2 h2 {
+    font-size: 20pt;
+}
+.dif3{
+    color: rgb(9, 206, 206);
+    font-size: 16pt;
+}
+.conteudoservico {
+    display: flex;
+    justify-content: center;
+    border-radius: 80px;
+}
+
+.cxservico {
+    background: var(--cxservico-bg);
+    box-shadow: var(--cxservico-bxs);
+    width: 80%;
+    height: 1300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
     
+    border-radius: 80px;
+    
+}
+
+.serv1{
+    background: white;
+    box-shadow: white 10px 20px 20px 10px;
+    width: 300px;
+    height: 1000px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.serv1 p{
+    text-indent: 5px;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    font-family: "Inter", sans-serif; 
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+.cont {
+    display: flex;
+    justify-content: end;
+    width: 90%;
 }
 /* ----------------------------------- */
 /* ---------Responsivo 1024px--------- */
 /* ----------------------------------- */
-
