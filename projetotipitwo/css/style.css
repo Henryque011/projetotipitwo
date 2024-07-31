@@ -13,9 +13,7 @@
     margin: 0;
 }
 
-html {
-    width: 100%;
-}
+
 
 body {
     background: var(--background-body)
@@ -30,6 +28,8 @@ header {
     min-width: 1200px;
     height: 600px;
     width: 100%;
+}
+.topo {
     background-image: url(../img/Banner.png);
 }
 
@@ -461,6 +461,7 @@ footer {
 hr {
     color: white;
     margin: 0px;
+    width: 100%;
 
 }
 
@@ -526,7 +527,8 @@ hr {
     font-size: xx-large;
 }
 
-.fim {
+footer > .fim {
+    width: -9999999px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -541,8 +543,10 @@ hr {
     display: flex;
     justify-content: space-evenly;
 }
-
-.site2>nav {
+.site2{
+    min-width: 1200px;
+}
+.site2 > nav {
     display: flex;
     justify-content: space-evenly;
     background: var(--site2-bg);
@@ -707,7 +711,7 @@ hr {
 
 .site3 {
     width: 100%;
-    background-image: url(../img/banner2.png);
+    background-image: url(../img/banner2.jpg);
     height: 600px;
 }
 
@@ -874,7 +878,45 @@ textarea {
 /* ---------Responsivo 1024px--------- */
 /* ----------------------------------- */
 @media (max-width: 1024px) {
-    html {
-        width: 100%;
+    .site{
+        width: 1220px
+    }
+    .centro > nav{
+        width: 1220px;
+    }
+    .introsobre h2 {
+        width: 1200px;
+    }
+    .conteudo {
+        width: 1200px;
+    }
+    .int {
+        width: 1220px;
+    }
+    .perguntas{
+        width: 1220px;
+    }
+    .rodape {
+        width: 1200px;
+    }
+    footer > hr{
+        width: 1200px;
+    }
+    footer {
+        width: 1220px;
+    }
+    .fim{
+        width: 1250px;
+    }
+    /* Sobre nós */
+    .sobre{
+        width: 1220px;
+    }
+    .textSobre{
+        margin: 20px;
+        padding: 10px;
+    }
+    .carrosel{
+        max-width: 600px;
     }
 }
