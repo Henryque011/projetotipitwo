@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- compatibilidade com edge -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> TipiTwo </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="img/programacao (1).png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <script src="js/script.js" defer></script>
+    <script>
+        const changeThemeToDark = () => {
+            document.documentElement.setAttribute("data-theme", "dark");
+            localStorage.setItem("data-theme", "dark");
+        }
+        const changeThemeToLight = () => {
+            document.documentElement.setAttribute("data-theme", "light");
+            localStorage.setItem("data-theme", 'light');
+        }
+        let theme = localStorage.getItem('data-theme');
+        if (theme == 'dark') changeThemeToDark();
+    </script>
+</head>
+
+<body>
+    <header>
+        <section class="site">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="img/Ativo 2.svg" alt="LOGO TIPITWO"></a>
+                </div>
+                <div class="links">
+                    <ul class="itens">
+                        <li><a href="index.html"> &lt; HOME </a></li>
+                        <li><a href=""> SOBRE NÓS </a></li>
+                        <li><a href=""> SERVIÇOS </a></li>
+                        <li><a href=""> CONTATO &gt; </a></li>
+                    </ul>
+                </div>
+                <div class="bnt">
+                    <div class="checkbox">
+                        <button type="button" class="md"> <input type="checkbox" name="toggle-dark" id="toggle-dark"
+                                namr="chk1" value="SERVIÇOS"> Trocar tema</button>
+                    </div>
+                </div>
+            </nav>
+            <div class="txtbanner">
+                <div class="animate__animated animate__slideInLeft">
+                    <h2>DESENVOLVIMENTO</h2>
+                    <div class="pos">
+                        <h2>WEB</h2>
+                        <h3 class="dif">ACESSÍVEL</h3>
+                    </div>
+                </div>
+                <div class="animate__animated animate__zoomIn">
+                    <h2>TRANSFORMANDO</h2>
+                    <div class="posit">
+                        <h3 class="dif"> SONHOS</h3>
+                        <h2 class="pos2">EM</h2>
+                    </div>
+                    <h2 class="pos2">CÓDIGOS</h2>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <article class="centro">
+            <nav>
+                <div class="acessibilidade">
+                    <button i class="fa-solid fa-eye-low-vision"></i></button>
+                    <button i class="fa-solid fa-hands"></i> </button>
+                </div>
+            </nav>
+            <div class="introsobre">
+                <h2> &lt; UM POUCO SOBRE &gt; </h2>
+            </div>
+        </article>
+        <article class="conteudo">
+            <div class="caixa">
+                <div class="imgilustrativa">
+                    <img src="img/imagem (1).png" alt="Icone">
+                </div>
+                <div class="caixatxt">
+                    <p>
+                        Na TIPITWO, acreditamos que a web deve ser um lugar acessível para todos. Nossa missão é criar
+                        websites inclusivos, garantindo que todas as pessoas, independentemente de suas habilidades ou
+                        limitações, possam navegar e interagir com o conteúdo digital de maneira eficaz.</p>
+                </div>
+                <div>
+                    <div class="caixaimg">
+                        <img src="img/estrtura de codigos.png" alt="Estrutura de códigos">
+                        <img src="img/toque de mãos em grupo.jpg" alt="Toque de mãos em grupo">
+                    </div>
+                    <div class="caixaimg">
+                        <img src="img/gráfico no laptop.png" alt="Gráfico no laptop">
+                        <img src="img/comunicação libras.jpg" alt="Comunicação em libras">
+                    </div>
+                </div>
+                <div class="direcionamento">
+                    <!-- <button> <a href="#">PORTFÓLIO </a></button> link portifolio inativo ainda -->
+                    <button> <a href="#">SAIBA MAIS </a></button>
+                </div>
+            </div>
+        </article>
+        <div class="int">
+            <button class="btn-scroll-top" arial-label="Voltar ao topo"> <i class="fa-solid fa-circle-up"></i> </button>
+        </div>
+        <section class="perguntas">
+            <div class="faq">
+                <h2>Responsabilidade Social</h2>
+            </div>
+            <div class="res">
+                <h2>
+                    Impacto Positivo: Contribuir para uma internet mais acessível ajuda a criar uma sociedade mais
+                    inclusiva e justa.
+                </h2>
+            </div>
+            <div class="faq">
+                <h2>Inclusão e Igualdade</h2>
+            </div>
+            <div class="res">
+                <h2>
+                    Igualdade de Oportunidades: Promover a inclusão digital garante que ninguém seja excluído do acesso
+                    a informações, serviços e oportunidades online.
+                </h2>
+            </div>
+            <div class="faq">
+                <h2>Alcance Ampliado</h2>
+            </div>
+            <div class="res">
+                <h2>
+                    Um site acessível pode ser usado por um público maior, incluindo pessoas com deficiência, idosos e
+                    usuários com conexões de internet mais lentas.
+                </h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <div class="rodape">
+            <div class="logorodap">
+                <img src="img/Ativo 2.svg" alt="Logo TIPITWO">
+                <img src="img/senac-logo-1.png" alt="Logo SENAC">
+            </div>
+            <div class="linksrodap">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Sobre nós</a></li>
+                    <li><a href="">Serviços</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </div>
+            <div class="linksrodap">
+                <ul>
+                    <li><a href="">Serviços</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="">Email: tipitwo02@gmail.com</a></li>
+                    <li><a href="">Fale conosco</a></li>
+                </ul>
+            </div>
+            <div class="linksrodap">
+                <ul>
+                    <li><a href="https://web.whatsapp.com/" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                    <li><a href="https://br.linkedin.com/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://accounts.google.com/" target="_blank"> <i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="fim">
+            <h2> &lt;TIPITWO&gt; </h2>
+            <h2>Todos os direitos reservados©</h2>
+        </div>
+    </footer>
+    <main>
+        <section class="site2">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="img/Ativo 2.svg" alt="LOGO TIPITWO"></a>
+                </div>
+                <div class="links">
+                    <ul class="itens">
+                        <li><a href="index.html"> &lt; HOME </a></li>
+                        <li><a href=""> SOBRE NÓS </a></li>
+                        <li><a href=""> SERVIÇOS </a></li>
+                        <li><a href=""> CONTATO &gt; </a></li>
+                    </ul>
+                </div>
+                <div class="bnt">
+                    <div class="checkbox">
+                        <button type="button" class="md"> <input type="checkbox" name="toggle-dark" id="toggle-dark"
+                                namr="chk1" value="SERVIÇOS"> Trocar tema</button>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="site2">
+            <article>
+                <div class="sobre">
+                    <img id="img_visao" class="imagemSobre ativo" src="img/visao.png"
+                        alt="Imagem ilustrativa sobre nossa perpectiva de futuro.">
+                    <img id="img_valores" class="imagemSobre" src="img/valores.png"
+                        alt="Imagem ilustrativa sobre nossos valores.">
+                    <img id="img_missao" class="imagemSobre" src="img/missao.png"
+                        alt="Imagem ilustrativa sobre nossa missão.">
+                    <div>
+                        <div class="botaosobre">
+                            <button id="visao">Visão</button>
+                            <button id="valores">Valores</button>
+                            <button id="missao">Missão</button>
+                        </div>
+                        <div class="textSobre">
+                            <div id="conteudoVisao" class="textoValores ativo">Queremos
+                                liderar
+                                a revolução da acessibilidade na web, sendo reconhecidos pela
+                                confiança de especialistas em desenvolvimento web acessível e
+                                promovendo uma cultura de inclusão digital.
+                            </div>
+                            <div id="conteudoValores" class="textoValores">A acessibilidade
+                                é o
+                                foco central das nossas atividades, desde o design até o
+                                desenvolvimento e testes finais, garantindo que nossos
+                                produtos sejam acessíveis a todos.
+                            </div>
+                            <div id="conteudoMissao" class="textoValores">O nosso objetivo é
+                                tornar a web mais acessível, oferecendo soluções digitais
+                                inovadoras para todos, sem distinção de habilidades ou
+                                deficiências.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
+    </main>
+    <article class="centro">
+        <nav>
+            <div class="acessibilidade">
+                <button i class="fa-solid fa-eye-low-vision"></i></button>
+                <button i class="fa-solid fa-hands"></i> </button>
+            </div>
+        </nav>
+        <div class="introsobre">
+            <h2> &lt; SOBRE NÓS &gt; </h2>
+        </div>
+    </article>
+    <div class="carrosel">
+        <div class="cx"><img src="img/henryqueFoto.png" alt="Foto do desenvolvedor Henryque.">
+            <h3>Henryque <br>
+                Desenvolvedor
+            </h3>
+            <h2> Desenvolvedor iniciante com foco em Front-end. Com experiência em HTML, CSS e frameworks, ele é
+                capaz de construir websites com design responsivo e oferecer uma experiência de usuário de alta
+                qualidade.</h2>
+        </div>
+        <div class="cx"><img src="img/ingridFoto.png" alt="Foto da desenvolvedora Ingrid.">
+            <h3>Ingrid <br>
+                Desenvolvedora
+            </h3>
+            <h2> Desenvolvedor iniciante com foco em Front-end. Com experiência em HTML, CSS e frameworks, ele é
+                capaz de construir websites com design responsivo e oferecer uma experiência de usuário de alta
+                qualidade.</h2>
+        </div>
+        <div class="cx"><img src="img/ryanFoto.png" alt="Foto do desenvolvedor Ryan.">
+            <h3>Ryan<br>
+                Desenvolvedor
+            </h3>
+            <h2> Desenvolvedor iniciante com foco em Front-end. Com experiência em HTML, CSS e frameworks, ele é
+                capaz de construir websites com design responsivo e oferecer uma experiência de usuário de alta
+                qualidade.</h2>
+        </div>
+        <div class="cx"><img src="img/camillyFoto.png" alt="Foto da desenvolvedora Camilly.">
+            <h3>Camillly<br>
+                Desenvolvedora
+            </h3>
+            <h2> Desenvolvedor iniciante com foco em Front-end. Com experiência em HTML, CSS e frameworks, ele é
+                capaz de construir websites com design responsivo e oferecer uma experiência de usuário de alta
+                qualidade.</h2>
+        </div>
+        <div class="cx"><img src="img/victorFoto.png" alt="">
+            <h3>Victor<br>
+                Desenvolvedor
+            </h3>
+            <h2> Desenvolvedor iniciante com foco em Front-end. Com experiência em HTML, CSS e frameworks, ele é
+                capaz de construir websites com design responsivo e oferecer uma experiência de usuário de alta
+                qualidade.</h2>
+        </div>
+    </div>
+    <div class="int">
+        <button class="btn-scroll-top" arial-label="Voltar ao topo"> <i class="fa-solid fa-circle-up"></i> </button>
+    </div>
+
+    <section class="site3">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="img/Ativo 2.svg" alt="LOGO TIPITWO"></a>
+            </div>
+            <div class="links">
+                <ul class="itens">
+                    <li><a href="index.html"> &lt; HOME </a></li>
+                    <li><a href=""> SOBRE NÓS </a></li>
+                    <li><a href=""> SERVIÇOS </a></li>
+                    <li><a href=""> CONTATO &gt; </a></li>
+                </ul>
+            </div>
+            <div class="bnt">
+                <div class="checkbox">
+                    <button type="button" class="md"> <input type="checkbox" name="toggle-dark" id="toggle-dark"
+                            namr="chk1" value="SERVIÇOS"> Trocar tema</button>
+                </div>
+            </div>
+        </nav>
+        <div class="txtbanner">
+            <div class="animate__animated animate__slideInLeft">
+                <h2>SERVIÇOS</h2>
+                <div class="pos3">
+                    <h3 class="dif2"> +</h3>
+                    <h3 class="dif2">SOLUÇÕES</h3>
+                </div>
+            </div>
+            <div class="animate__animated animate__zoomIn">
+                <h2> A BASE SOLIDA</h2>
+                <div class="pos4">
+                    <h2> DO SEU </h2>
+                    <h3 class="dif3"> SUCESSO</h3>
+                </div>
+            </div>
+        </div>
+        <article class="centro">
+            <nav>
+                <div class="acessibilidade">
+                    <button i class="fa-solid fa-eye-low-vision"></i></button>
+                    <button i class="fa-solid fa-hands"></i> </button>
+                </div>
+            </nav>
+            <div class="introsobre">
+                <h2> &lt; SERVIÇOS &gt; </h2>
+            </div>
+        </article>
+        <main>
+            <section class="conteudoservico">
+                <div class="cxservico">
+                    <div class="serv1">
+                        <img src="img/web-browser.png" alt="Icone ilustrativo de um site.">
+                        <p> Oferecemos soluções personalizadas para criar sites que impressionam e funcionam em qualquer
+                            dispositivo. Desde o design responsivo até a otimização SEO, garantimos uma experiência
+                            excepcional para seus visitantes.</p>
+                        <br>
+                        <img src="img/ecoomerce.png" alt="Icone ilustrativo de um e-commerce.">
+                        <p> nosso serviço de criação de sites de e-commerce, você pode transformar sua ideia em uma loja
+                            virtual próspera em questão de dias. Imagine uma plataforma online personalizada, projetada
+                            para destacar seus produtos, atrair clientes e impulsionar suas vendas. </p>
+                    </div>
+                    <div class="serv1">
+                        <img src="img/marketingdigital.png" alt="Icone ilustrativo de marketingdigital.">
+                        <p> nossos serviços de marketing digital, você pode alcançar novos patamares de sucesso. Imagine
+                            sua marca sendo destacada em todos os cantos da internet, cativando e convertendo clientes
+                            em potencial em defensores entusiasmados da sua marca.
+                            Com uma estratégia personalizada, vamos mergulhar fundo no mundo digital, utilizando
+                            ferramentas poderosas.</p>
+                        <br>
+                        <img src="img/ui-ux.png"
+                            alt="Icone ilustrativo sobre interface de usuárioe e experiênciade usuário.">
+                        <p> Com nossos serviços de UX e UI, sua plataforma digital se transformará em uma experiência
+                            impecável para seus usuários. Criamos interfaces intuitivas e visualmente atraentes,
+                            garantindo que seus clientes tenham uma experiência de navegação fluida em todos os
+                            dispositivos.</p>
+                    </div>
+                    <div class="serv1">
+                        <img src="img/check.png" alt="Icone ilustrativo check.">
+                        <p> Ao desenvolver o site, seguimos todas as diretrizes e critérios impostos pelo Google para
+                            que sua empresa apareça na maior rede de pesquisa.</p>
+                        <br>
+                        <img src="img/accessibility.png" alt="Icone ilustrativa de acessibilidade.">
+                        <p> Com nossa oferta de acessibilidade digital, estamos comprometidos em tornar sua plataforma
+                            online inclusiva para todos. Imagine alcançar uma audiência mais ampla, garantindo que cada
+                            usuário, independentemente de suas habilidades ou necessidades especiais, possa acessar e
+                            desfrutar plenamente do seu conteúdo.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="cont">
+                <div class="direcionamento">
+                    <button> <a href="#">PORTFÓLIO </a></button>
+                    <button> <a href="#">SAIBA MAIS </a></button>
+                </div>
+            </div>
+            <div class="int">
+                <button class="btn-scroll-top" arial-label="Voltar ao topo"> <i class="fa-solid fa-circle-up"></i>
+                </button>
+            </div>
+        </main>
+
+        <section class="site4">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="img/Ativo 2.svg" alt="LOGO TIPITWO"></a>
+                </div>
+                <div class="links">
+                    <ul class="itens">
+                        <li><a href="index.html"> &lt; HOME </a></li>
+                        <li><a href=""> SOBRE NÓS </a></li>
+                        <li><a href=""> SERVIÇOS </a></li>
+                        <li><a href=""> CONTATO &gt; </a></li>
+                    </ul>
+                </div>
+                <div class="bnt">
+                    <div class="checkbox">
+                        <button type="button" class="md"> <input type="checkbox" name="toggle-dark" id="toggle-dark"
+                                namr="chk1" value="SERVIÇOS"> Trocar tema</button>
+                    </div>
+                </div>
+            </nav>
+            <div class="txtbanner">
+                <div class="animate__animated animate__slideInLeft">
+                    <h2>COMUNICAÇÃO</h2>
+                    <div class="pos3">
+                        <h3 class="dif2"> +</h3>
+                        <h3 class="dif2">SUPORTE</h3>
+                    </div>
+                </div>
+                <div class="animate__animated animate__zoomIn">
+                    <h2> TRANSMITINDO</h2>
+                    <div class="pos5">
+                        <h2 class="dif4"> VALORES</h2>
+                        <h2 class=""> CONECTANDO</h2>
+                        <h3 class="dif4"> proposítos </h3>
+                    </div>
+                </div>
+            </div>
+            <article class="centro">
+                <nav>
+                    <div class="acessibilidade">
+                        <button i class="fa-solid fa-eye-low-vision"></i></button>
+                        <button i class="fa-solid fa-hands"></i> </button>
+                    </div>
+                </nav>
+                <div class="introsobre">
+                    <h2> &lt; Fale conosco &gt; </h2>
+                </div>
+            </article>
+
+            <main>
+                <article class="contato">
+                    <div class="cxcontato">
+
+                        <div>
+                            <form action="email.php" method="post"></form>
+                            <label>Nome&#58;</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome completo" required><br>
+                        </div>
+                        <div>
+                            <label>Telefone&#58;</label>
+                            <input type="text" name="tel" placeholder="Digite seu telefone" required><br>
+                        </div>
+                        <div>
+                            <label>E-mail&#58;</label>
+                            <input type="text" name="email" placeholder="Digite seu e-mail" required resize><br>
+                        </div>
+                        <div>
+                            <label> Mensagem</label><br>
+                            <textarea name="mensagem" cols="50" rows="6" placeholder="Digite sua mensagem"
+                                required></textarea><br>
+                            <div>
+                                <input type="submit" value="ENVIAR">
+                                <input type="reset" value="LIMPAR">
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+
+                </article>
+                <div class="int">
+                    <button class="btn-scroll-top" arial-label="Voltar ao topo"> <i class="fa-solid fa-circle-up"></i>
+                    </button>
+                </div>
+            </main>
+
+        </section>
+    </section>
+
+    <script src="https://kit.fontawesome.com/bedd2811b0.js" crossorigin="anonymous"></script>
+    <!-- jquery - script para trabalhar com animações -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <!-- animação -->
+    <script src="js/animacao.js"></script>
+
+</body>
