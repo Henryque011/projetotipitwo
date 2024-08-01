@@ -21,22 +21,35 @@ body {
 
 header {
     width: 100%;
+    position: relative;
+    transition: 0,6;
+    z-index: 1000000000;
 }
 
 .site {
     width: 100%;
     min-width: 1200px;
+    
+    
+}
+.baner1 {
+    background-size: cover;
+    
     height: 600px;
     width: 100%;
 }
-.topo {
-    background-image: url(../img/Banner.png);
-}
 
-/* nav */
-.site>nav {
+.topo > nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+/* nav */
+.site > nav {
+    display: flex;
+    justify-content:space-evenly;
+    background: transparent;
 }
 
 /* logo */
@@ -176,13 +189,13 @@ input[type=checkbox] {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin: 20px;
     padding: 10px;
     height: 415px;
     font-weight: 900;
     font-family: "Black Han Sans", sans-serif;
     font-size: xx-large;
     color: #DBC7B3;
+   
 }
 
 .animate__slideInLeft {
