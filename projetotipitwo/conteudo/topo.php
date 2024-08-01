@@ -1,6 +1,7 @@
-<section class="site">
-    <article class="topo">
+<article class="topo">
+    <section class="site">
             <nav>
+               
                 <div class="logo">
                     <a href="index.php"><img src="img/Ativo 2.svg" alt="LOGO TIPITWO"></a>
                 </div>
@@ -18,6 +19,9 @@
                                 namr="chk1" value="SERVIÇOS"> Trocar tema</button>
                     </div>
                 </div>
+                <div class="banner1">
+                    
+                </div>
             </nav>
-    </article>
-<section>
+    <section> 
+</article>
