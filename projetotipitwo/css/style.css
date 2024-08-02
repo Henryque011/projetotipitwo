@@ -12,45 +12,42 @@
     padding: 0;
     margin: 0;
 }
-
-
-
 body {
     background: var(--background-body)
 }
-
 header {
     width: 100%;
     position: relative;
     transition: 0,6;
-    z-index: 1000000000;
+    
 }
-
 .site {
     width: 100%;
     min-width: 1200px;
-    
-    
+    position: fixed;
+    background-color: #ffffff;
 }
 .baner1 {
     background-size: cover;
-    
     height: 600px;
     width: 100%;
 }
-
 .topo > nav {
     display: flex;
     justify-content: space-around;
     position: sticky;
+    align-items: center;
+    text-align: center;
     top: 0;
 }
 /* nav */
 .site > nav {
     display: flex;
     justify-content:space-evenly;
-    background: transparent;
+    background:rgb(2, 7, 27);
+    z-index: -10000;
 }
+
 
 /* logo */
 .logo img {
@@ -184,18 +181,21 @@ input[type=checkbox] {
 }
 
 /* titúlos banner */
+.banner1{
+    background-image: url(../img/Banner.png);
+}
 .txtbanner {
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     padding: 10px;
-    height: 415px;
+    height: 600px;
     font-weight: 900;
     font-family: "Black Han Sans", sans-serif;
     font-size: xx-large;
     color: #DBC7B3;
-   
+    
 }
 
 .animate__slideInLeft {
@@ -556,14 +556,9 @@ footer > .fim {
     display: flex;
     justify-content: space-evenly;
 }
+
 .site2{
-    min-width: 1200px;
-}
-.site2 > nav {
-    display: flex;
-    justify-content: space-evenly;
-    background: var(--site2-bg);
-    box-shadow: var(--site2-bxs) 15px 15px 15px 15px;
+    
 }
 
 .switch {
