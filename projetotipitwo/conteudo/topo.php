@@ -1,7 +1,6 @@
 <article class="topo">
     <section class="site">
             <nav>
-               
                 <div class="logo">
                     <a href="index.php"><img src="img/Ativo 2.svg" alt="LOGO TIPITWO"></a>
                 </div>
