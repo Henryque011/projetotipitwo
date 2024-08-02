@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="shortcut icon" href="img/programacao (1).png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/programacao.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <script src="js/script.js" defer></script>
@@ -35,6 +35,9 @@
     </header>
     <main>
     <section class="site2">
+        <div class="banner1">
+            img
+        </div>
             <article>
                 <div class="sobre">
                     <img id="img_visao" class="imagemSobre ativo" src="img/visao.png"
@@ -75,5 +78,5 @@
     </main>
     <footer>
         <!-- rodape -->
-        <?php require_once('conteudo/rodape.php') ?>
+        <?php require_once('conteudo/rodape.php')?>
     </footer>
