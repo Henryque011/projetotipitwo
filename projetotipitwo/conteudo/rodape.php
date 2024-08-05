@@ -1,23 +1,22 @@
 <hr>
 <div class="rodape">
     <div class="logorodap">
-        <img src="img/Ativo 2.svg" alt="Logo TIPITWO">
-        <img src="img/senac-logo-1.png" alt="Logo SENAC">
+        <a href="index.php"><img src="img/Ativo 2.svg" alt="Logo TIPITWO"></a>
+        <a href="https://www.sp.senac.br"><img src="img/senac-logo-1.png" alt="Logo SENAC"></a>
     </div>
     <div class="linksrodap">
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="sobre.php">Sobre nós</a></li>
-            <li><a href="">Serviços</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="servico.php">Serviços</a></li>
+            <li><a href="contato.php">Contato</a></li>
         </ul>
     </div>
     <div class="linksrodap">
         <ul>
-            <li><a href="">Serviços</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#">Fale conosco</a></li>
             <li><a href="">Email: tipitwo02@gmail.com</a></li>
-            <li><a href="">Fale conosco</a></li>
+            
         </ul>
     </div>
     <div class="linksrodap">
