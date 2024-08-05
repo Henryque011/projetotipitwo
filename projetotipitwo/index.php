@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,19 +26,22 @@
         if (theme == 'dark') changeThemeToDark();
     </script>
 </head>
-
 <body>
     <header>
         <!-- nav topo -->
         <?php require_once('conteudo/topo.php')?>
+        <div class="padi">
+        </div>
         <!-- banner1 -->
         <?php require_once('conteudo/banner1.php')?>
     </header>
-
     <main>
         <!-- home -->
         <!-- acessibilidade + introdução da sessão -->
         <?php require_once('conteudo/acessibilidade.php')?>
+        <div class="introsobre">
+            <h2> &lt; UM POUCO SOBRE &gt; </h2>
+        </div>
         <!-- um pouco sobre nos -->
         <?php require_once('conteudo/umpoucosobre.php')?>
         <!-- scroll -->
@@ -52,208 +54,11 @@
         <!-- rodape -->
         <?php require_once('conteudo/rodape.php') ?>
     </footer>
-
-
-    <div class="int">
-        <button class="btn-scroll-top" arial-label="Voltar ao topo"> <i class="fa-solid fa-circle-up"></i> </button>
-    </div>
-
-    <section class="site3">
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="img/Ativo 2.svg" alt="LOGO TIPITWO"></a>
-            </div>
-            <div class="links">
-                <ul class="itens">
-                    <li><a href="index.html"> &lt; HOME </a></li>
-                    <li><a href=""> SOBRE NÓS </a></li>
-                    <li><a href=""> SERVIÇOS </a></li>
-                    <li><a href=""> CONTATO &gt; </a></li>
-                </ul>
-            </div>
-            <div class="bnt">
-                <div class="checkbox">
-                    <button type="button" class="md"> <input type="checkbox" name="toggle-dark" id="toggle-dark"
-                            namr="chk1" value="SERVIÇOS"> Trocar tema</button>
-                </div>
-            </div>
-        </nav>
-        <div class="txtbanner">
-            <div class="animate__animated animate__slideInLeft">
-                <h2>SERVIÇOS</h2>
-                <div class="pos3">
-                    <h3 class="dif2"> +</h3>
-                    <h3 class="dif2">SOLUÇÕES</h3>
-                </div>
-            </div>
-            <div class="animate__animated animate__zoomIn">
-                <h2> A BASE SOLIDA</h2>
-                <div class="pos4">
-                    <h2> DO SEU </h2>
-                    <h3 class="dif3"> SUCESSO</h3>
-                </div>
-            </div>
-        </div>
-        <article class="centro">
-            <nav>
-                <div class="acessibilidade">
-                    <button i class="fa-solid fa-eye-low-vision"></i></button>
-                    <button i class="fa-solid fa-hands"></i> </button>
-                </div>
-            </nav>
-            <div class="introsobre">
-                <h2> &lt; SERVIÇOS &gt; </h2>
-            </div>
-        </article>
-        <main>
-            <section class="conteudoservico">
-                <div class="cxservico">
-                    <div class="serv1">
-                        <img src="img/web-browser.png" alt="Icone ilustrativo de um site.">
-                        <p> Oferecemos soluções personalizadas para criar sites que impressionam e funcionam em qualquer
-                            dispositivo. Desde o design responsivo até a otimização SEO, garantimos uma experiência
-                            excepcional para seus visitantes.</p>
-                        <br>
-                        <img src="img/ecoomerce.png" alt="Icone ilustrativo de um e-commerce.">
-                        <p> nosso serviço de criação de sites de e-commerce, você pode transformar sua ideia em uma loja
-                            virtual próspera em questão de dias. Imagine uma plataforma online personalizada, projetada
-                            para destacar seus produtos, atrair clientes e impulsionar suas vendas. </p>
-                    </div>
-                    <div class="serv1">
-                        <img src="img/marketingdigital.png" alt="Icone ilustrativo de marketingdigital.">
-                        <p> nossos serviços de marketing digital, você pode alcançar novos patamares de sucesso. Imagine
-                            sua marca sendo destacada em todos os cantos da internet, cativando e convertendo clientes
-                            em potencial em defensores entusiasmados da sua marca.
-                            Com uma estratégia personalizada, vamos mergulhar fundo no mundo digital, utilizando
-                            ferramentas poderosas.</p>
-                        <br>
-                        <img src="img/ui-ux.png"
-                            alt="Icone ilustrativo sobre interface de usuárioe e experiênciade usuário.">
-                        <p> Com nossos serviços de UX e UI, sua plataforma digital se transformará em uma experiência
-                            impecável para seus usuários. Criamos interfaces intuitivas e visualmente atraentes,
-                            garantindo que seus clientes tenham uma experiência de navegação fluida em todos os
-                            dispositivos.</p>
-                    </div>
-                    <div class="serv1">
-                        <img src="img/check.png" alt="Icone ilustrativo check.">
-                        <p> Ao desenvolver o site, seguimos todas as diretrizes e critérios impostos pelo Google para
-                            que sua empresa apareça na maior rede de pesquisa.</p>
-                        <br>
-                        <img src="img/accessibility.png" alt="Icone ilustrativa de acessibilidade.">
-                        <p> Com nossa oferta de acessibilidade digital, estamos comprometidos em tornar sua plataforma
-                            online inclusiva para todos. Imagine alcançar uma audiência mais ampla, garantindo que cada
-                            usuário, independentemente de suas habilidades ou necessidades especiais, possa acessar e
-                            desfrutar plenamente do seu conteúdo.</p>
-                    </div>
-                </div>
-            </section>
-            <div class="cont">
-                <div class="direcionamento">
-                    <button> <a href="#">PORTFÓLIO </a></button>
-                    <button> <a href="#">SAIBA MAIS </a></button>
-                </div>
-            </div>
-            <div class="int">
-                <button class="btn-scroll-top" arial-label="Voltar ao topo"> <i class="fa-solid fa-circle-up"></i>
-                </button>
-            </div>
-        </main>
-
-        <section class="site4">
-            <nav>
-                <div class="logo">
-                    <a href="index.html"><img src="img/Ativo 2.svg" alt="LOGO TIPITWO"></a>
-                </div>
-                <div class="links">
-                    <ul class="itens">
-                        <li><a href="index.html"> &lt; HOME </a></li>
-                        <li><a href=""> SOBRE NÓS </a></li>
-                        <li><a href=""> SERVIÇOS </a></li>
-                        <li><a href=""> CONTATO &gt; </a></li>
-                    </ul>
-                </div>
-                <div class="bnt">
-                    <div class="checkbox">
-                        <button type="button" class="md"> <input type="checkbox" name="toggle-dark" id="toggle-dark"
-                                namr="chk1" value="SERVIÇOS"> Trocar tema</button>
-                    </div>
-                </div>
-            </nav>
-            <div class="txtbanner">
-                <div class="animate__animated animate__slideInLeft">
-                    <h2>COMUNICAÇÃO</h2>
-                    <div class="pos3">
-                        <h3 class="dif2"> +</h3>
-                        <h3 class="dif2">SUPORTE</h3>
-                    </div>
-                </div>
-                <div class="animate__animated animate__zoomIn">
-                    <h2> TRANSMITINDO</h2>
-                    <div class="pos5">
-                        <h2 class="dif4"> VALORES</h2>
-                        <h2 class=""> CONECTANDO</h2>
-                        <h3 class="dif4"> proposítos </h3>
-                    </div>
-                </div>
-            </div>
-            <article class="centro">
-                <nav>
-                    <div class="acessibilidade">
-                        <button i class="fa-solid fa-eye-low-vision"></i></button>
-                        <button i class="fa-solid fa-hands"></i> </button>
-                    </div>
-                </nav>
-                <div class="introsobre">
-                    <h2> &lt; Fale conosco &gt; </h2>
-                </div>
-            </article>
-
-            <main>
-                <article class="contato">
-                    <div class="cxcontato">
-
-                        <div>
-                            <form action="email.php" method="post"></form>
-                            <label>Nome&#58;</label>
-                            <input type="text" name="nome" placeholder="Digite seu nome completo" required><br>
-                        </div>
-                        <div>
-                            <label>Telefone&#58;</label>
-                            <input type="text" name="tel" placeholder="Digite seu telefone" required><br>
-                        </div>
-                        <div>
-                            <label>E-mail&#58;</label>
-                            <input type="text" name="email" placeholder="Digite seu e-mail" required resize><br>
-                        </div>
-                        <div>
-                            <label> Mensagem</label><br>
-                            <textarea name="mensagem" cols="50" rows="6" placeholder="Digite sua mensagem"
-                                required></textarea><br>
-                            <div>
-                                <input type="submit" value="ENVIAR">
-                                <input type="reset" value="LIMPAR">
-                            </div>
-                        </div>
-                    </div>
-                    </form>
-
-                </article>
-                <div class="int">
-                    <button class="btn-scroll-top" arial-label="Voltar ao topo"> <i class="fa-solid fa-circle-up"></i>
-                    </button>
-                </div>
-            </main>
-
-        </section>
-    </section>
-
     <script src="https://kit.fontawesome.com/bedd2811b0.js" crossorigin="anonymous"></script>
     <!-- jquery - script para trabalhar com animações -->
     <script type="text/javascript" src="//code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
-
     <script type="text/javascript" src="js/slick.min.js"></script>
     <!-- animação -->
     <script src="js/animacao.js"></script>
-
 </body>
