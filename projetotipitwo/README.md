@@ -1,2 +1,0 @@
-# projetotipitwo
-Projeto oficial TIPITWO
