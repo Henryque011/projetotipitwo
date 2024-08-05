@@ -73,20 +73,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
+// botaõ scrool
 const btnScrollTop = document.querySelector(".btn-scroll-top");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
+    if (window.scrollY > 100) {
     btnScrollTop.classList.add("show-btn-scroll-top");
-  } else {
+    } else {
     btnScrollTop.classList.remove("show-btn-scroll-top");
-  }
+    }
 });
 
 btnScrollTop.addEventListener("click", () => {
-  window.scrollTo({
+    window.scrollTo({
     top: 0,
     behavior: "smooth",
-  });
+    });
 });
