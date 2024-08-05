@@ -8,8 +8,8 @@
                     <ul class="itens">
                         <li><a href="index.php"> &lt; HOME </a></li>
                         <li><a href="sobre.php"> SOBRE NÓS </a></li>
-                        <li><a href=""> SERVIÇOS </a></li>
-                        <li><a href=""> CONTATO &gt; </a></li>
+                        <li><a href="servico.php"> SERVIÇOS </a></li>
+                        <li><a href="contato.php"> CONTATO &gt; </a></li>
                     </ul>
                 </div>
                 <div class="bnt">
