@@ -19,18 +19,12 @@ header {
     width: 100%;
     position: relative;
     transition: 0,6;
-    
 }
 .site {
     width: 100%;
-    min-width: 1200px;
+    max-width: 1200px;
     position: fixed;
     background-color: #ffffff;
-}
-.baner1 {
-    background-size: cover;
-    height: 600px;
-    width: 100%;
 }
 .topo > nav {
     display: flex;
@@ -46,18 +40,14 @@ header {
     justify-content:space-evenly;
     background:rgb(2, 7, 27);
     z-index: -10000;
+    width: 1200px;
 }
-
-
 /* logo */
 .logo img {
     margin: 20px;
     width: 300px;
     cursor: pointer;
 }
-
-
-
 /* links-home-sobre... */
 .links {
     display: flex;
@@ -65,12 +55,10 @@ header {
     align-items: center;
     cursor: pointer;
 }
-
 .itens {
     display: flex;
     padding-left: 20px;
 }
-
 .itens li a {
     padding: 15px;
     font-size: 20px;
@@ -78,7 +66,6 @@ header {
     text-decoration: none;
     color: white;
 }
-
 .itens li a:hover {
     transition: 1s;
     user-select: contain;
@@ -87,7 +74,6 @@ header {
     box-shadow: aqua 5px 5px 5px 5px;
     cursor: pointer;
 }
-
 /* BOTÃO TROCA DE TEMA */
 .bnt,
 .md .me {
@@ -96,7 +82,6 @@ header {
     align-items: center;
     padding: 20px;
 }
-
 .md {
     display: flex;
     justify-content: space-around;
@@ -112,13 +97,11 @@ header {
     font-weight: bolder;
     font-family: "Inter", sans-serif;
 }
-
 .md:hover,
 .me:hover {
     background-color: rgb(9, 206, 206);
     transition: 1s;
 }
-
 /* troca de tema  e variaveis*/
 :root {
     --background-body: #0A2945;
@@ -144,7 +127,6 @@ header {
     --cxcontato-bg: -webkit-linear-gradient(left, black, transparent);
     --cxcontato-color: white;
 }
-
 :root[data-theme="dark"] {
     --background-body: #E4F2FC;
     --acessibilidade-border: black;
@@ -167,7 +149,6 @@ header {
     --cxcontato-bg: -webkit-linear-gradient(left, black, transparent);
     --cxcontato-color: white;
 }
-
 input[type=checkbox] {
     margin: 0;
     padding: 0;
@@ -177,14 +158,14 @@ input[type=checkbox] {
     align-items: center;
     text-align: center;
     justify-content: space-between;
-
 }
-
 /* titúlos banner */
 .banner1{
     background-image: url(../img/Banner.png);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
 }
-
 .txtbanner {
     display: flex;
     justify-content: space-around;
@@ -199,20 +180,16 @@ input[type=checkbox] {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .animate__slideInLeft {
     transition-duration: 3s;
 }
-
 .animate__zoomIn {
     transition: 3s;
 }
-
 .pos {
     display: flex;
     justify-content: space-between;
 }
-
 .dif {
     display: flex;
     justify-content: start;
@@ -220,7 +197,6 @@ input[type=checkbox] {
     font-weight: bolder;
     font-size: 24pt;
 }
-
 .posit {
     display: flex;
     justify-content: space-between;
@@ -303,7 +279,6 @@ element.style {
 .conteudo {
     display: flex;
     justify-content: center;
-
 }
 
 .caixa {
