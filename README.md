@@ -1,2 +1,3 @@
-# projetotipitwo
-Projeto oficial TIPITWO
+#TipiTwo
+Projeto oficial TIPITWO - Senac
+
